@@ -1,0 +1,14 @@
+
+
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+
+/*一层顶部样式*/
+.top{height: 38px; background: #000;}
+.top_left{float: left;}
+.top_left li{list-style: none;float:left;}
+
+
+
+.top_right{float: right;}
+.top_right li{list-style:}

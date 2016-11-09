@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/demo3.css" />
+        <link rel="stylesheet" href="../css/font-awesome.css" type = "text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script type = "text/javascript" src = "../js/jquery-1.10.1.min.js"></script>
+        <script src="../js/cookies.js"></script>
+        <script type = "text/javascript" src = "../js/demo3.js"></script>
+        <script type = "text/javascript">
+            $(function(){
+                //顶部社交
+                
+               $("#sheJiao").bind({
+                        mouseover:function(){
+                        //$(".shejiao").animate({height: 270},600);
+                        $(".shejiao").css("display","block").css("z-index", "22");
+                 },mouseout: function(){
+                        $(".shejiao").css("display","none");
+                    }
+                });
+
+              $(".top .left_last").hover(function(){
+                    $(".cellphone").css("display", "block").css("z-index","22").slideDown(1000);
+                },function(){
+                    $(".cellphone").css("display", "none")
+                })  
+            })
+        </script>
+    </head>
+    <body>
+        <!--一层顶部横向导航栏-->
+        <div class = "top_top">
+            <div class = "top">
+                <ul class = "top_left">
+                    <li><a href = "">个人及家用产品库</a></li>
+                    <li><a href = "">商用产品库</a></li>
+                    <li><a href = "">企业级产品库</a></li>
+                    <li><a href = "">聚享汇会员专享</a></li>
+                    <li><a href = "" id = "sheJiao">社交平台</a></li>
+                    <li><a href = "" class = "left_last">手机版</a></li>
+                </ul>
+                <ul class = "top_right">
+                    <li><a href = "">登录</a></li>
+                    <li><a href = "">注册</a></li>
+                    <li><a href = "" class = "right_last">购物车</a></li>
+                </ul>
+            </div>
+        </div>
+
+            <style>
+                .shejiao {position: absolute; left:446px;line-height: 37px;padding: 0 10px;z-index:2;display:none; background: #fff;}
+                .shejiao li a{color: #000;text-decoration: none;}
+                .shejiao li a:hover{color: #ec831a;}
+            </style>
+            <ul class = "shejiao" style = "width:150px; height:270px;border:1px solid #707070;">
+                <li><a href=""><img src="../images/index/ico_sina.png" alt="">  联想法官方微博</a></li>
+                <li><a href=""><img src="../images/index/icon03.jpg" alt="">  杨元庆微博</a></li>
+                <li><a href=""><img src="../images/index/ico_wc.png" alt="">  联想法官方微信</a></li>
+                <li><a href=""><img src="../images/index/ico_zfb.png" alt="">  百度贴吧联想吧</a></li>
+                <li><a href=""><img src="../images/index/ico_zfb.png" alt="">  联想兴趣部落</a></li>
+                <li><a href=""><img src="../images/index/ico_qq.png" alt="">  联想QQ空间</a></li>
+                <li><a href=""><img src="../images/index/ico_wc.png" alt="">  联想法官方社区</a></li>
+            </ul>
+            
+            <div class = "cellphone" style = "width: 252px; height: 138px; border: 1px solid #707070; position:absolute;left:524px; display: none; background: #fff;">
+                <div class = "cellphone_left" style = "float: left; margin-top: 25px; margin-left: 23px;">
+                    <img src="../images/index/erweima.jpg" alt="">
+                </div>
+                <div class = "cellphone_right" style = "float: left; margin-top: 22px; margin-left: 15px;">
+                    <p style = "font-size:14px;">联想商城客户端<br /><span style = "color: #e2231a">手机下单立减20元</span></p>
+                    <p><img src="../images/index/0da8a977-593c-41eb-af5d-5fac4d3f7f52.jpg" alt=""></p>
+                </div>
+            </div>
+
+
+    <!--      登录 及登录样式     -->
+    <div class = "enter">
+        <div class = "bg_black">
+            <a href = "" class = "common">普通登录</a>
+            <a href = "" class = "shortcut">快捷登录</a>
+        </div>
+        <!-- 关闭按钮-->
+        <a href="" class = "enter_close">×</a>
+
+        <div class = "username">
+            <p class = "username_name"><img src="../images/index/icon03.jpg" alt=""></p>
+            <input type="text" class = "name_p" placeholder = "   请输入手机号或邮箱" style = "border: none; outline: 0; width: 294px; height: 34px;">
+        </div>
+        <div class = "hint1"></div>
+        <div class = "password">
+            <p class = "password_word"><img src="../images/index/icon04.jpg" alt=""></p>
+            <input type="password"  class = "inp1" placeholder = "   密码" style = "border: none; outline: 0; width: 294px; height: 34px;">
+            <!--
+            <input type="text"  class = "inp2" placeholder = "   动态密码" style = "border: none; outline: 0; width: 200px; height: 34px; float: left; display: block;">
+            <a href="" class = "mima" style = "color: #000; width: 93px; height: 34px; float: right; background: #999; font-size: 12px; text-align: center; line-height: 34px; display: block">获取动态密码</a>
+            -->
+        </div>
+        <div class = "hint2"></div>
+        <div class = "auto">
+        <input type="checkbox" class = "check" >
+       <span class = "auto_span">自动登录</span>
+       <p class = "enter_p">登   录</p>
+       <p class = "more_p">
+            <a href="" style = "display:inline-block; float:left; color: #005be7">立即注册</a>
+            <a href="" style = "display: inline-block; float: right; color: #005be7">忘记密码</a>
+        </p>
+        <p style = "width: 330px; margin: 20px 0 0 48px; font-size: 12px">使用合作网站登录</p>
+        <p style = "width: 330px; margin: 5px 0 0 48px;">
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_qq.png" alt=""></a>
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_sina.png" alt=""></a>
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_wc.png" alt=""></a>
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_zfb.png" alt=""></a>
+        </p>
+        </div>
+    </div>
+
+    <!--             注册            -->
+        <div class = "login">
+            <p class = "tit">欢迎注册联想会员</p>
+            <a href="" class = "close2">×</a>
+            <div  class  = "div1">
+                <p>账号</p>
+                <input type="text" placeholder = "请输入手机号或邮箱" id = "in_zhanghao">
+                <span class = "p_zhanghao" style = "color: red"></span><br>
+            </div>
+            
+            <div class = "div2">
+                <p>密码</p>
+                <input type="password" placeholder = "密码长度8-20位数字,字母," id = "in_mima1">
+                <span class = "p_mima1" style = "color: red"></span><br />
+            </div>
+
+            <div class = "div3">
+                <p>确认密码</p>
+                <input type="password" id = "in_mima2">
+                <span class = "p_mima2" style = "color: red"></span><br />
+            </div>
+            
+
+            <div class = "div4">
+                <p>验证码</p>
+                <input type="text" id = "in_yanzheng">
+                <p class = "p_yanzheng" style = "background: #999; float: left; font-size:20px; text-align: center; line-height:28px; width:81px; height: 28px; cursor: pointer;">fghfgh</p>  
+                <div class = "p_yanzhengs" style = "color: red"></div>
+            </div>
+
+            <div class = "div5">
+                <input type="checkbox">
+                <span>同意联想的使用条款和隐私权政策</span>
+            </div>
+            <p class = "zhuce">立即注册</p>
+        </div>
+
+        <!--三层可搜索横向栏-->
+
+        <div class = "seek_seek">
+            <div class = "seek">
+                <h3 class = "h3-1"> Lenovo </h3>
+                <h3 class = "h3-2"> 购物车 </h3>
+
+                <div class = "seekright">
+                    <p class = "prompt">
+                        <a href="">拯救者</a>
+                        <a href="">New S2</a>
+                        <a href="">小新</a>
+                    </p>
+                    <input type="text" placeholder = "miix5"  class = "dom"/>
+                    <div>
+                        <a href="" class = "btn1"><img src="../images/index/sousuo1.jpg" alt="" style = "height: 100%;"></a>
+                        <a href="" class = "btn2" ><img src="../images/index/sousuo2.jpg" alt="" style = "height: 100%;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4F*********************四层新人礼包导航栏********************-->
+        <div class = "nav_nav">
+            <ul class = "nav">
+                <li>
+                <a href="">全部分类</a>
+                </li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="">小新 Air 13 pro</a></li>
+                <li><a href="">爆款</a></li>
+                <li><a href="">联想合伙人</a></li>
+                <li><a href="">0元试用</a></li>
+                <li><a href="">以旧换新</a></li>
+                <li><a href="">私人订制</a></li>
+                <li><a href="">服务</a></li>
+                <li><a href="">社区</a></li>
+            </ul>
+        </div>
+
+        <!--     购物车   -->
+        <div class = "shopping">
+                   <div id="box">
+                    <ul class="header">
+                        <li>名称</li>
+                        <li>规格</li>
+                        <li>数量</li>
+                        <li>单价</li>
+                    </ul>
+                    <div id="goodsList">
+                        <p id="hide">购物车是空的，请先去选购商品吧！！<a href="demo2.html">去逛逛</a></p>
+                    </div>
+                    <p class="footer"><input type="button" id="buy" value="结算"><span>&yen;<em id="all">0</em></span></p>
+                </div>
+        </div>
+    <script>
+            var hide = document.getElementById('hide');
+            var goodsList = document.getElementById('goodsList');
+            var oAll = document.getElementById('all');
+            var all = 0;
+            var coo = cookie();
+            if(coo){
+                hide.style.display = 'none';
+                for(var key in coo){
+                    var arr1 = coo[key].split('|');
+                    var arr2 = [];
+                    var obj = {};
+                    for(var i = 0;i < arr1.length;i++){
+                        arr2.push(arr1[i].split('#'));
+                    }
+                    for(var j = 0;j < arr2.length;j++){
+                        obj[arr2[j][0]] = arr2[j][1];
+                    }
+                    var oDl = document.createElement('dl');
+                    //创建名称
+                    var oDt = document.createElement('dt');
+                    var oImg = document.createElement('img');
+                    oImg.src = obj.imgUrl;
+                    var oText = document.createElement('span');
+                    oText.innerHTML = obj.name;
+                    var oA = document.createElement('a');
+                    oA.href = obj.url;
+                    var oCheck = document.createElement('input');
+                    oCheck.type = 'checkbox';
+                    oA.appendChild(oImg);
+                    oA.appendChild(oText);
+                    oDt.appendChild(oCheck);
+                    oDt.appendChild(oA);
+                    oDl.appendChild(oDt);
+                    //创建型号
+                    var oSize = document.createElement('dd');
+                    oSize.className = 'oSize';
+                    oSize.innerHTML = obj.size;
+                    oDl.appendChild(oSize);
+                    //创建数量
+                    var oNumber = document.createElement('dd');
+                    oNumber.className = 'oNumber';
+                    oNumber.innerHTML = obj.number;
+                    oDl.appendChild(oNumber);
+                    //创建单价
+                    var oPrice = document.createElement('dd');
+                    oPrice.className = 'oPrice';
+                    oPrice.innerHTML = obj.price;
+                    oDl.appendChild(oPrice);
+                    //删除按钮
+                    var oDelet = document.createElement('dd');
+                    oDelet.className = 'oDelet';
+                    oDelet.innerHTML = '删除商品';
+                    oDelet.id = obj.id + obj.size;
+                    oDl.appendChild(oDelet);
+                    goodsList.appendChild(oDl);
+                }
+                var oC = goodsList.getElementsByTagName('input');
+                var oP = goodsList.getElementsByClassName('oPrice');
+                var oN = goodsList.getElementsByClassName('oNumber');
+                var oD = goodsList.getElementsByClassName('oDelet');
+                for(var k = 0;k < oC.length;k++){
+                    oC[k].index = k;
+                    oD[k].index = k;
+                    oC[k].onchange = function(){
+                        var p = oP[this.index].innerHTML * oN[this.index].innerHTML;
+                        if(this.checked){
+                            all += p;
+                        }else{
+                            all -= p;
+                        }
+                        oAll.innerHTML = all;
+                    }
+                    oD[k].onclick = function(){
+                        cookie('goods'+this.id,'',-1);
+                        if(this.parentNode.childNodes[0].childNodes[0].checked){
+                            all -= oP[this.index].innerHTML * oN[this.index].innerHTML;
+                        }
+                        oAll.innerHTML = all;
+                        this.parentNode.style.display = 'none';
+                    }
+                }
+            }
+            
+
+ </script>
+
+        
+        <div class = "dom">
+            <div class = "nnn">
+                <div class = "aa">
+                    <p>买了又买</p>
+                    <span><button id = "left"> < </button> <button id = "right"> > </button></span>
+                </div>
+                <div class = "play">
+                    <ul>
+                        <li><a href=""><img src="../images/demo3/y1.png" alt=""></a>
+                                <p class = "p1"><a href="">新秀丽轻薄商务高端手提包</a></p>
+                                <p class = "p2">商城价：399元</p>
+                                <p class = "p3"><a href="">加入购物车</a></p>
+                        </li>
+                        <li><a href=""><img src="../images/demo3/y2.jpg" alt=""></a>
+                                <p class = "p1"><a href="">新秀丽轻薄商务高端手提包</a></p>
+                                <p class = "p2">商城价：399元</p>
+                                <p class = "p3"><a href="">加入购物车</a></p>
+                        </li>
+                        <li><a href=""><img src="../images/demo3/y3.jpg" alt=""></a>
+                                <p class = "p1"><a href="">新秀丽轻薄商务高端手提包</a></p>
+                                <p class = "p2">商城价：399元</p>
+                                <p class = "p3"><a href="">加入购物车</a></p>
+                        </li>
+                        <li><a href=""><img src="../images/demo3/y4.jpg" alt=""></a>
+                                <p class = "p1"><a href="">新秀丽轻薄商务高端手提包</a></p>
+                                <p class = "p2">商城价：399元</p>
+                                <p class = "p3"><a href="">加入购物车</a></p>
+                        </li>
+                         <li><a href=""><img src="../images/demo3/y5.jpg" alt=""></a>
+                                <p class = "p1"><a href="">新秀丽轻薄商务高端手提包</a></p>
+                                <p class = "p2">商城价：399元</p>
+                                <p class = "p3"><a href="">加入购物车</a></p>
+                        </li>
+                         <li><a href=""><img src="../images/demo3/y6.jpg" alt=""></a>
+                                <p class = "p1"><a href="">新秀丽轻薄商务高端手提包</a></p>
+                                <p class = "p2">商城价：399元</p>
+                                <p class = "p3"><a href="">加入购物车</a></p>
+                        </li>
+                         <li><a href=""><img src="../images/demo3/y7.jpg" alt=""></a>
+                                <p class = "p1"><a href="">新秀丽轻薄商务高端手提包</a></p>
+                                <p class = "p2">商城价：399元</p>
+                                <p class = "p3"><a href="">加入购物车</a></p>
+                        </li>
+                         <li><a href=""><img src="../images/demo3/y8.jpg" alt=""></a>
+                                <p class = "p1"><a href="">新秀丽轻薄商务高端手提包</a></p>
+                                <p class = "p2">商城价：399元</p>
+                                <p class = "p3"><a href="">加入购物车</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+     <!--      底部      -->        
+        <div class = "bottom1">
+            <div class = "bottom">
+                <p><img src="../images/index/b1.jpg" alt=""></p>
+                <div class = "char">
+                    <ul class = "u-1">
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+      <!--    结束        -->
+        <div class = "over1">
+            <div class = "over">
+            <p>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+ 
+                <br/>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+            </p>
+            </div>
+        </div>
+
+    </body>
+</html>

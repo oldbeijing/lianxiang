@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/demo1.css" />
+        <link rel="stylesheet" href="../css/font-awesome.css" type = "text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script type = "text/javascript" src = "../js/jquery-1.10.1.min.js"></script>
+
+        <script type = "text/javascript" src = "../js/demo1.js"></script>
+        <script type = "text/javascript">
+            $(function(){
+                //顶部社交
+                   
+               $("#sj").bind({
+                        mouseover:function(){
+                        //$(".shejiao").animate({height: 270},600);
+                        $(".shejiao").css("display","block").css("z-index", "100").slideDown(1000);
+                 },mouseout: function(){
+                        $(".shejiao").css("display","none");
+                    }
+                });
+
+              $("#left_last").hover(function(){
+                    $(".cellphone").css("display", "block").css("z-index","100").slideDown(1000);
+                },function(){
+                    $(".cellphone").css("display", "none")
+                })  
+            })
+        </script>
+    </head>
+    <body>
+        <!--一层顶部横向导航栏-->
+        <style>
+                .shejiao {position: absolute; left:446px;line-height: 37px;padding: 0 10px;z-index:2;display:none; background: #fff;}
+                .shejiao li a{color: #000;text-decoration: none;}
+                .shejiao li a img{display: inline; float: left;}
+                .shejiao li a span{display: inline; float: right;}
+                .shejiao li a:hover{color: #ec831a;}
+            </style>
+        <div class = "top_top">
+            <div class = "top">
+                <ul class = "top_left">
+                    <li><a href = "">个人及家用产品库</a></li>
+                    <li><a href = "">商用产品库</a></li>
+                    <li><a href = "">企业级产品库</a></li>
+                    <li><a href = "">聚享汇会员专享</a></li>
+                    <li id = "sj"><a href = "" id = "sheJiao">社交平台</a>
+                        <ul class = "shejiao" style = "width:150px; height:270px;border:1px solid #707070;">
+                            <li><a href=""><img src="../images/index/ico_sina.png" alt=""><span>联想法官方微博</span></a></li>
+                            <li><a href=""><img src="../images/index/icon03.jpg" alt=""><span>杨元庆微博</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_wc.png" alt=""><span>联想法官方微信</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_zfb.png" alt=""><span> 百度贴吧联想吧</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_zfb.png" alt=""><span>联想兴趣部落</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_qq.png" alt=""><span> 联想QQ空间</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_wc.png" alt=""><span>  联想法官方社区</span></a></li>
+                        </ul>
+                    </li>
+                    <li id = "left_last"><a href = "" class = "left_last">手机版</a>
+                         <div class = "cellphone" style = "width: 252px; height: 138px; border: 1px solid #707070; position:absolute;left:524px; display: none; background: #fff;">
+                            <div class = "cellphone_left" style = "float: left; margin-top: 25px; margin-left: 23px;">
+                                <img src="../images/index/erweima.jpg" alt="">
+                            </div>
+                            <div class = "cellphone_right" style = "float: left; margin-top: 22px; margin-left: 15px;">
+                                <p style = "font-size:14px;">联想商城客户端<br /><span style = "color: #e2231a">手机下单立减20元</span></p>
+                                <p><img src="../images/index/0da8a977-593c-41eb-af5d-5fac4d3f7f52.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class = "top_right">
+                    <li><a href = "">登录</a></li>
+                    <li><a href = "">注册</a></li>
+                    <li><a href = "" class = "right_last">购物车</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    <!--      登录 及登录样式     -->
+    <div class = "enter">
+        <div class = "bg_black">
+            <a href = "" class = "common">普通登录</a>
+            <a href = "" class = "shortcut">快捷登录</a>
+        </div>
+        <!-- 关闭按钮-->
+        <a href="" class = "enter_close">×</a>
+
+        <div class = "username">
+            <p class = "username_name"><img src="../images/index/icon03.jpg" alt=""></p>
+            <input type="text" class = "name_p" placeholder = "   请输入手机号或邮箱" style = "border: none; outline: 0; width: 294px; height: 34px;">
+        </div>
+        <div class = "hint1"></div>
+        <div class = "password">
+            <p class = "password_word"><img src="../images/index/icon04.jpg" alt=""></p>
+            <input type="password"  class = "inp1" placeholder = "   密码" style = "border: none; outline: 0; width: 294px; height: 34px;">
+            <!--
+            <input type="text"  class = "inp2" placeholder = "   动态密码" style = "border: none; outline: 0; width: 200px; height: 34px; float: left; display: block;">
+            <a href="" class = "mima" style = "color: #000; width: 93px; height: 34px; float: right; background: #999; font-size: 12px; text-align: center; line-height: 34px; display: block">获取动态密码</a>
+            -->
+        </div>
+        <div class = "hint2"></div>
+        <div class = "auto">
+        <input type="checkbox" class = "check" >
+       <span class = "auto_span">自动登录</span>
+       <p class = "enter_p">登   录</p>
+       <p class = "more_p">
+            <a href="" style = "display:inline-block; float:left; color: #005be7">立即注册</a>
+            <a href="" style = "display: inline-block; float: right; color: #005be7">忘记密码</a>
+        </p>
+        <p style = "width: 330px; margin: 20px 0 0 48px; font-size: 12px">使用合作网站登录</p>
+        <p style = "width: 330px; margin: 5px 0 0 48px;">
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_qq.png" alt=""></a>
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_sina.png" alt=""></a>
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_wc.png" alt=""></a>
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_zfb.png" alt=""></a>
+        </p>
+        </div>
+    </div>
+
+    <!--             注册            -->
+        <div class = "login">
+            <p class = "tit">欢迎注册联想会员</p>
+            <a href="" class = "close2">×</a>
+            <div  class  = "div1">
+                <p>账号</p>
+                <input type="text" placeholder = "请输入手机号或邮箱" id = "in_zhanghao">
+                <span class = "p_zhanghao" style = "color: red"></span><br>
+            </div>
+            
+            <div class = "div2">
+                <p>密码</p>
+                <input type="password" placeholder = "密码长度8-20位数字,字母," id = "in_mima1">
+                <span class = "p_mima1" style = "color: red"></span><br />
+            </div>
+
+            <div class = "div3">
+                <p>确认密码</p>
+                <input type="password" id = "in_mima2">
+                <span class = "p_mima2" style = "color: red"></span><br />
+            </div>
+            
+
+            <div class = "div4">
+                <p>验证码</p>
+                <input type="text" id = "in_yanzheng">
+                <p class = "p_yanzheng" style = "background: #999; float: left; font-size:20px; text-align: center; line-height:28px; width:81px; height: 28px; cursor: pointer;">fghfgh</p>  
+                <div class = "p_yanzhengs" style = "color: red"></div>
+            </div>
+
+            <div class = "div5">
+                <input type="checkbox">
+                <span>同意联想的使用条款和隐私权政策</span>
+            </div>
+            <p class = "zhuce">立即注册</p>
+        </div>
+
+        <!--三层可搜索横向栏-->
+
+        <div class = "seek_seek">
+            <div class = "seek">
+                <h3 class = "h3-1"> Lenovo </h3>
+                <h3 class = "h3-2"> 联想商城 </h3>
+
+                <div class = "seekright">
+                    <p class = "prompt">
+                        <a href="">拯救者</a>
+                        <a href="">New S2</a>
+                        <a href="">小新</a>
+                    </p>
+                    <input type="text" placeholder = "miix5"  class = "dom"/>
+                    <div>
+                        <a href="" class = "btn1"><img src="../images/index/sousuo1.jpg" alt="" style = "height: 100%;"></a>
+                        <a href="" class = "btn2" ><img src="../images/index/sousuo2.jpg" alt="" style = "height: 100%;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4F*********************四层新人礼包导航栏********************-->
+        <script>
+                $(function(){
+                        $("#baokuan").hover(function(){
+                            $("#baokuan1").css("display", "block");
+                        },function(){
+                             $("#baokuan1").css("display", "none");
+                        })
+
+                        $("#serve").hover(function(){
+                            $("#serves").css("display", "block");
+                        },function(){
+                             $("#serves").css("display", "none");
+                        })
+                })
+        </script>
+        <style>
+            #baokuan{position: relative;}
+            #baokuan1{position: absolute; width: 150px; height: 270px; background: #fff; z-index: 5; display: none; left:-50px;}
+            #baokuan1 li,#serves li{height: 30px; font-size: 14px; line-height: 30px; width: 150px;text-align:center;}
+            #baokuan1 li a,#serves li a{display: inline;color: #999;}
+            #baokuan1 li a:hover,#serves li a:hover{color: red;}
+            #serve{position: relative;}
+            #serves{position: absolute; width: 150px; height: 90px; background: #fff; z-index: 5; left: -50px; display: none;}
+
+        </style>
+        <div class = "nav_nav">
+            <ul class = "nav">
+                <li>
+                <a href="">全部分类</a>
+                </li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="">小新 Air 13 pro</a></li>
+                 <li id = "baokuan"><a href="html/demo1.html">爆款</a>
+                    <ul id = "baokuan1">
+                        <li><a href="">小新Air 12</a></li>
+                        <li><a href="">小新Air 13</a></li>
+                        <li><a href="">小新310</a></li>
+                        <li><a href="">拯救者游戏本</a></li>
+                        <li><a href="">ThinkPad S32</a></li>
+                        <li><a href="">看家宝</a></li>
+                        <li><a href="">小新700</a></li>
+                        <li><a href="">MIIX5</a></li>
+                        <li><a href="">YOGO BOAK</a></li>
+                    </ul>
+                </li>
+                <li><a href="">联想合伙人</a></li>
+                <li><a href="">0元试用</a></li>
+                <li><a href="">以旧换新</a></li>
+                <li><a href="">私人订制</a></li>
+                <li id = "serve"><a href="html/demo1.html">服务</a>
+                    <ul id = "serves">
+                        <li><a href="">服务支持</a></li>
+                        <li><a href="">驱动下载</a></li>
+                        <li><a href="">联想知识库</a></li>
+                    </ul>
+                </li>
+                <li><a href="">社区</a></li>
+            </ul>
+        </div>
+
+        <!--        热搜榜     -->
+        <div class = "resou">
+            <div class = "search">
+                <div class = "d1">
+                    <p class = "pm">热搜榜</p>
+                    <a href = "demo2.html"><img src="../images/demo1/re1.jpg" alt=""></a>
+                    <p class = "text">小新700（15/Windows 10家庭版/15.6英寸/4G）<span>￥4799.00</span></p>
+                </div>
+                <div class = "d2">
+                     <a href = "demo2.html"><img src="../images/demo1/re2.jpg" alt=""></a>
+                     <p>小新Air 13 Pro(15/windows 10 j家庭) <span>￥5699.00</span></p>
+                </div>
+                <div class = "d3">
+                    <a href = "demo2.html"><img src="../images/demo1/re3.jpg" alt=""></a>
+                    <p>小新Air 13 Pro(15/windows 10 j家庭) <span>￥5699.00</span></p>
+                </div>
+                <div class = "d4">
+                    <a href = "demo2.html"><img src="../images/demo1/re4.jpg" alt=""></a>
+                    <p>小新Air 13 Pro(15/windows 10 j家庭) <span>￥5699.00</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!--        主体          -->
+        <div class = "banner">
+            <div class = "ban">
+                <!-- 左-->
+                <div class = "b_left">
+                    <ul>
+                        <li class = "l1"><a href="">搜索分类</a></li>
+                        <li style = "background: #000"><a href="">Lenovo笔记本</a></li>
+                        <li><a href="">Think笔记本</a></li>
+                        <li><a href="">Lenovo台式机</a></li>
+                        <li><a href="">Think台式机</a></li>
+                        <li><a href="">Lenovo平板电脑</a></li>
+                        <li><a href="">Think平板电脑</a></li>
+                        <li><a href="">打印机</a></li>
+                        <li><a href="">智能数码</a></li>
+                        <li><a href="">我要服务</a></li>
+                    </ul>
+                </div>
+                <!--右-->
+                <div class = "b_right">
+                    <div class = "cs1">
+                        <input type="text" placeholder = "搜索内容：">
+                        <p>共<span>122</span>款产品</p>
+                    </div>
+                    
+                    <!-- 系列 -->
+                    <script>
+                        $(function(){
+                            $.ajax({
+                                url: '../js/demo1.json',
+                                type: 'GET',
+                                success: function(res){
+                                    var html = '';
+                                    for(var i = 0; i < res[1].child.length; i++){
+                                        html += '<li><a href="demo2.html">'+res[1].child[i].title1+'</a></li><li><a href="demo2.html">'+res[1].child[i].title2+'</a></li><li><a href="demo2.html">'+res[1].child[i].title3+'</a></li><li><a href="demo2.html">'+res[1].child[i].title4+'</a></li><li><a href="demo2.html">'+res[1].child[i].title5+'</a></li><li><a href="demo2.html">'+res[1].child[i].title6+'</a></li><li><a href="demo2.html">'+res[1].child[i].title7+'</a></li><li><a href="demo2.html">'+res[1].child[i].title8+'</a></li><li><a href="demo2.html">'+res[1].child[i].title9+'</a></li><li><a href="demo2.html">'+res[1].child[i].title10+'</a></li> <li><a href="demo2.html">'+res[1].child[i].title11+'</a></li><li><a href="demo2.html">'+res[1].child[i].title12+'</a></li><li><a href="demo2.html">'+res[1].child[i].title13+'</a></li><li><a href="demo2.html">'+res[1].child[i].title14+'</a></li><li><a href="demo2.html">'+res[1].child[i].title15+'</a></li><li><a href="demo2.html">'+res[1].child[i].title16+'</a></li>'
+                                    }
+                                    $(".cs2 ul").html(html);
+                                }
+                            })
+                        })
+                    </script>
+                    <div class = "cs2">
+                        <p class = "cs2_p1">系列：</p>
+                        <ul>
+                        <!--
+                            <li><a href="">小新系列</a></li>
+                            <li><a href="">拯救者系列</a></li>
+                            <li><a href="">天意系列</a></li>
+                            <li><a href="">YOGA系列</a></li>
+                            <li><a href="">FLEX系列</a></li>
+                            <li><a href="">710S系列</a></li>
+                            <li><a href="">310S系列</a></li>
+                            <li><a href="">300S系列</a></li>
+                            <li><a href="">100S系列</a></li>
+                            <li><a href="">510系列</a></li>
+                            <li><a href="">500系列</a></li>
+                            <li><a href="">310系列</a></li>
+                            <li><a href="">300系列</a></li>
+                            <li><a href="">300系列</a></li>
+                            <li><a href="">110系列</a></li>
+                            <li><a href="">S41系列</a></li>
+                            -->
+                        </ul>
+                        <p class = "cs2_p2" id = "checkbox"><a href="">多选▼</a></p>
+                    </div>
+                    <br>
+
+                     <!--  价格  -->
+                     <script>
+                        $(function(){
+                            $.ajax({
+                                url: '../js/demo1.json',
+                                type: 'GET',
+                                success: function(res){
+                                    var html = '';
+                                    for(var i = 0; i < res[2].child.length; i++){
+                                        html += '<li><a href="demo2.html">'+res[2].child[i].title1+'</a></li> <li><a href="demo2.html">'+res[2].child[i].title2+'</a></li><li><a href="demo2.html">'+res[2].child[i].title3+'</a></li><li><a href="demo2.html">'+res[2].child[i].title4+'</a></li><li><a href="demo2.html">'+res[2].child[i].title5+'</a></li><li><a href="demo2.html">'+res[2].child[i].title6+'</a></li><li><a href="demo2.html">'+res[2].child[i].title7+'</a></li> <li><a href="demo2.html">'+res[2].child[i].title8+'</a></li> <li><a href="demo2.html">'+res[2].child[i].title9+'</a></li>'
+                                    }
+                                    $(".cs3 ul").html(html);
+                                }
+                            })
+                        })
+                    </script>
+                     
+                     <div class = "cs3">
+                        <p class = "cs3_p1">价格：</p>
+                        <ul>
+                        <!--
+                            <li><a href="">1999元以下</a></li>
+                            <li><a href="">2000-2999</a></li>
+                            <li><a href="">3000-3999</a></li>
+                            <li><a href="">4000-4999</a></li>
+                            <li><a href="">5000-5999</a></li>
+                            <li><a href="">6000-6999</a></li>
+                            <li><a href="">7000-7999</a></li>
+                            <li><a href="">10000以上</a></li>
+                            <li><a href="">100S系列</a></li>
+                            -->
+                        </ul>
+                    </div>
+
+                    <!--    cpu型号    -->
+                    <script>
+                        $(function(){
+                            $.ajax({
+                                url: '../js/demo1.json',
+                                type: 'GET',
+                                success: function(res){
+                                    var html = '';
+                                    for(var i = 0; i < res[3].child.length; i++){
+                                        html += '<li><a href="demo2.html">'+res[3].child[i].title1+'</a></li><li><a href="demo2.html">'+res[3].child[i].title2+'</a></li><li><a href="demo2.html">'+res[3].child[i].title3+'</a></li><li><a href="demo2.html">'+res[3].child[i].title4+'</a></li><li><a href="demo2.html">'+res[3].child[i].title5+'</a></li>'
+                                    }
+                                    $(".cs4 ul").html(html);
+                                }
+                            })
+                        })
+                    </script>
+                    <div class = "cs4">
+                    <p class = "cs4_p1">cpu型号</p>
+                        <ul>
+                        <!--
+                            <li><a href="">inter i3</a></li>
+                            <li><a href="">inter i5</a></li>
+                            <li><a href="">inter i7</a></li>
+                            <li><a href="">其它</a></li>
+                            <li><a href="">AMD</a></li>
+                            -->
+                        </ul>
+                        <p class = "cs4_p2" ><a href="" id = "checkbox">多选▼</a></p>
+                    </div>
+                    
+                    <!--*******更多选项 下拉式*********-->
+                    <div class = "move">更多选项▼</div>
+
+                    <!--    内存容量    -->
+                    <script>
+                        $(function(){
+                            $.ajax({
+                                url: '../js/demo1.json',
+                                type: 'GET',
+                                success: function(res){
+                                    var html = '';
+                                    for(var i = 0; i < res[4].child.length; i++){
+                                        html += '<li><a href="demo2.html">'+res[4].child[i].title1+'</a></li> <li><a href="demo2.html">'+res[4].child[i].title1+'</a></li><li><a href="demo2.html">'+res[4].child[i].title1+'</a></li>'
+                                    }
+                                    $(".cs5 ul").html(html);
+                                }
+                            })
+                        })
+                    </script>
+                    <div class = "cs5">
+                        <p class = "cs5_p1">内存容量</p>
+                        <ul>
+                        <!--
+                            <li><a href="">4G</a></li>
+                            <li><a href="">8G</a></li>
+                            <li><a href="">16G</a></li>
+                            -->
+                        </ul>
+                        <p class = "cs5_p2"><a href="" id = "checkbox">多选▼</a></p>
+                    </div>
+
+                    <!--    硬盘容量    -->
+                    <script>
+                        $(function(){
+                            $.ajax({
+                                url: '../js/demo1.json',
+                                type: 'GET',
+                                success: function(res){
+                                    var html = '';
+                                    for(var i = 0; i < res[5].child.length; i++){
+                                        html += '<li><a href="">'+res[5].child[i].title1+'</a></li> <li><a href="">'+res[5].child[i].title2+'</a></li><li><a href="">'+res[5].child[i].title3+'</a></li><li><a href="">'+res[5].child[i].title4+'</a></li><li><a href="">'+res[5].child[i].title5+'</a></li>'
+                                    }
+                                    $(".cs6 ul").html(html);
+                                }
+                            })
+                        })
+                    </script>
+                    <div class = "cs6">
+                        <p class = "cs6_p1">硬盘容量</p>
+                        <ul>
+                        <!--
+                            <li><a href="">500G</a></li>
+                            <li><a href="">1TB</a></li>
+                            <li><a href="">含128G SSD</a></li>
+                            <li><a href="">含256G SSD</a></li>
+                            <li><a href="">含512G SSD</a></li>
+                            -->
+                        </ul>
+                        <p class = "cs6_p2"><a href="" id = "checkbox">多选▼</a></p>
+                    </div>
+
+                    <!--       操作系统     -->
+                    <script>
+                        $(function(){
+                            $.ajax({
+                                url: '../js/demo1.json',
+                                type: 'GET',
+                                success: function(res){
+                                    var html = '';
+                                    for(var i = 0; i < res[6].child.length; i++){
+                                        html += '<li><a href="">'+res[6].child[i].title1+'</a></li> <li><a href="">'+res[6].child[i].title1+'</a></li><li><a href="">'+res[6].child[i].title1+'</a></li>'
+                                    }
+                                    $(".cs7 ul").html(html);
+                                }
+                            })
+                        })
+                    </script>
+                    <div class = "cs7">
+                        <p class = "cs7_p1">操作系统</p>
+                        <ul>
+                        <!--
+                            <li><a href="">windows 10</a></li>
+                            <li><a href="">windows 8</a></li>
+                            <li><a href="">其它</a></li>
+                            -->
+                        </ul>
+                        <p class = "cs7_p2"><a href="" id = "checkbox">多选▼</a></p>
+                    </div>
+
+                    <!--        屏幕吃存    -->
+                    <script>
+                        $(function(){
+                            $.ajax({
+                                url: '../js/demo1.json',
+                                type: 'GET',
+                                success: function(res){
+                                    var html = '';
+                                    for(var i = 0; i < res[7].child.length; i++){
+                                        html += '<li><a href="">'+res[7].child[i].title1+'</a></li><li><a href="">'+res[7].child[i].title2+'</a></li><li><a href="">'+res[7].child[i].title3+'</a></li><li><a href="">'+res[7].child[i].title4+'</a></li><li><a href="">'+res[7].child[i].title5+'</a></li><li><a href="">'+res[7].child[i].title6+'</a></li><li><a href="">'+res[7].child[i].title7+'</a></li><li><a href="">'+res[7].child[i].title8+'</a></li>'
+                                    }
+                                    $(".cs8 ul").html(html);
+                                }
+                            })
+                        })
+                    </script>
+                    <div class = "cs8">
+                        <p class = "cs8_p1">操作系统</p>
+                        <ul>
+                        <!--
+                            <li><a href="">11.6</a></li>
+                            <li><a href="">12.2</a></li>
+                            <li><a href="">12.5</a></li>
+                            <li><a href="">13.3</a></li>
+                            <li><a href="">13.9</a></li>
+                            <li><a href="">14.0</a></li>
+                            <li><a href="">15.6</a></li>
+                            <li><a href="">17.3</a></li>
+                            -->
+                        </ul>
+                        <p class = "cs8_p2"><a href="" id = "checkbox">多选▼</a></p>
+                    </div>
+
+                    <!--        物理分辨率       -->
+                    <div class = "cs9">
+                        <p class = "cs9_p1">物理分辨率</p>
+                        <ul>
+                            <li><a href="">高清</a></li>
+                            <li><a href="">普通</a></li>
+                            <li><a href="">超高清</a></li>
+                        </ul>
+                        <p class = "cs9_p2"><a href="" id = "checkbox">多选▼</a></p>
+                    </div>
+
+                    <!--        适用场景    -->
+                    <div class = "cs10">
+                        <p class = "cs10_p1">操作系统</p>
+                        <ul>
+                            <li><a href="">校园学生</a></li>
+                            <li><a href="">时尚女生</a></li>
+                            <li><a href="">家庭娱乐</a></li>
+                            <li><a href="">商务办公</a></li>
+                            <li><a href="">高琴游戏</a></li>
+                            <li><a href="">轻薄携带</a></li>
+                        </ul>
+                        <p class = "cs10_p2"><a href="" id = "checkbox">多选▼</a></p>
+                    </div>
+
+                    <!--收起-->
+                    <div class = "pack_up">收起▲</div>
+
+                    <!--  box-->
+                    <div class = "box">
+                        <div class = "menu">
+                            <ul class = "left">
+                                <li><a href="" style = "color: red;">综合</a></li>
+                                <li><a href="">销量</a></li>
+                                <li><a href="">时间</a></li>
+                                <li><a href="">按价格从高到底</a></li>
+                                <li><a href="">按价格从底到高</a></li>
+                                <li><a href="">有库存</a></li>
+                                <li><input type="text" placeholder = "在结果中搜素"><button>确定</button></li>
+                            </ul>
+                            <ul class = "right">
+                                <li>1/6</li>
+                                <li><a href="">首页</a></li>
+                                <li><a href="">上一页</a></li>
+                                <li><a href="">下一页</a></li>
+                                <li><a href="">尾页</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 图片-->
+                        <script>
+                            $(function(){
+                                $.ajax({
+                                    url: '../js/demo1.json',
+                                    type: 'GET',
+                                    success: function(res){
+                                        var html = '';
+                                        for(var i = 0; i < res[0].child.length; i++){
+                                            html += '<li><a href = "demo2.html"><img src="'+res[0].child[i].img+'" alt=""></a><h6>'+res[0].child[i].title1+'</h6><p class = "pp">'+res[0].child[i].title2+'</p><span>'+res[0].child[i].price+'</span><p class = "pc"><a href="demo3.html" class = "a1">'+res[0].child[i].title3+'</a><a href="" class = "a2">'+res[0].child[i].title4+'</a></p></li>'
+                                        }
+                                        $(".photo ul").append(html);
+                                    }
+                                })
+                           })
+                           
+                        </script>
+                        
+                        <div class = "photo">
+                            <ul>
+                           
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+         <!--      底部      -->        
+        <div class = "bottom1">
+            <div class = "bottom">
+                <p><img src="../images/index/b1.jpg" alt=""></p>
+                <div class = "char">
+                    <ul class = "u-1">
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+      <!--    结束        -->
+        <div class = "over1">
+            <div class = "over">
+            <p>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+ 
+                <br/>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+            </p>
+            </div>
+        </div>
+
+    </body>
+</html>

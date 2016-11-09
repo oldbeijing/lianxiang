@@ -1,0 +1,94 @@
+[
+  {
+    "child": [
+      {
+        "img": "images/index/str1.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/str2.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/str3.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/str4.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/str5.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/str6.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      }
+    ]
+  },
+  {
+    "child": [
+      {
+        "img": "images/index/f101.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/f102.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/f103.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/f104.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/f105.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/f106.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/f107.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      },
+      {
+        "img": "images/index/f108.jpg",
+        "title1": "小新奇迹机",
+        "title2": "正在预约",
+        "price": "5999元"
+      }
+    ]
+  }
+]

@@ -1,0 +1,199 @@
+/* 
+* @Author: anchen
+* @Date:   2016-11-04 21:07:40
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-11-06 20:52:47
+*/
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: 0; display: block;}
+
+/*一层 顶部样式*/
+.top_top{height: 38px;width:100%;background:black;}
+.top{width: 1200px;margin:0 auto;height: 38px;}
+.top_left{float: left;}
+.top_left li{float:left;}
+.top_left li a,.top_right li a{font-size:14px; color: #fff;line-height: 38px;padding:0 10px;border-right: 1px solid #fff;}
+.top_left li a:hover:hover,.top_right li a:hover{font-size:14px; color: red;line-height: 38px;}
+.top_left .left_last,.top_right .right_last{border-right: none;}
+.top_right{float: right;}
+.top_right li{float:left;}
+
+/*登录 注册*/
+ .enter{width: 430px; height: 340px;background: #fff; position: fixed;z-index: 10; display: none;}
+.bg_black{height: 40px; background: black;}
+.common{display: inline-block; font-size: 14px; width: 215px; color: #f30003; text-align: center; height: 37px ; line-height: 37px; border-bottom: 3px solid #f30003;float:left;}
+.shortcut{display: inline-block; font-size: 14px; width: 215px; color: #c4c4c4; text-align: center; height: 37px ; line-height: 37px;float:right;}
+.username{width: 330px; height: 34px; margin:39px 0 0 48px;border:1px solid #c4c4c4;overflow: hidden;}
+.username_name,.password_word{float:left ;height:34px; width: 34px; border-right: 1px solid #c4c4c4;text-align: center;}
+.username_name img,.password_word img{margin-top: 7px;}
+.password{width: 330px; height: 34px; margin:5px 0 0 48px;border:1px solid #c4c4c4; overflow: hidden;}
+.hint1, .hint2{margin-left: 48px; height: 22px; width: 330px; color: red; font-size: 12px;}
+.check{margin-left: 48px;}
+
+.enter_p{margin-left: 48px; margin-top:6px;width:330px; height: 26px; background: #ef1c22; font-size: 14px; color: #fff; text-align: center; line-height: 26px;cursor: pointer;}
+.more_p{margin:6px 0 0 48px; width: 330px; height:16px;}
+/*定位关闭按钮*/
+.enter_close{font-size: 24px; color: #8d8d8d; position: absolute; top: 5px; right: 10px;}
+
+
+/**************************注册**********/
+.login{width: 430px; height: 400px; position: fixed; background: #fff; z-index: 20; display: none;}
+
+.close2{font-size: 24px; color: #8d8d8d; position: absolute; top: 5px; right: 10px;}
+.login .tit{height: 38px; line-height: 38px; font-size: 20px; color: #fff; background: #000;}
+.div1{border: 1px solid #bec2cd; margin-top: 15px;margin-left: 35px;width: 331px; height: 28px;}
+.div1 p{width: 80px; float: left; border-right: 1px solid #bec2cd; height: 28px; line-height: 28px; text-align:center; font-size: 14px;}
+#in_zhanghao{width: 250px; height: 28px; line-height: 28px; border: none; outline: none;}
+
+.div2{border: 1px solid #bec2cd; margin-top: 15px;margin-left: 35px;width: 331px; height: 28px; margin-top: 30px;}
+.div2 p{width: 80px; float: left; border-right: 1px solid #bec2cd; height: 28px; line-height: 28px; text-align:center; font-size: 14px;}
+#in_mima1{width: 250px; height: 28px; line-height: 28px; border: none; outline: none;}
+
+.div3{border: 1px solid #bec2cd; margin-top: 15px;margin-left: 35px;width: 331px; height: 28px; margin-top: 30px;}
+.div3 p{width: 80px; float: left; border-right: 1px solid #bec2cd; height: 28px; line-height: 28px; text-align:center; font-size: 14px;}
+#in_mima2{width: 250px; height: 28px; line-height: 28px; border: none; outline: none;}
+
+.div4{border: 1px solid #bec2cd; margin-top: 15px;margin-left: 35px;width: 331px; height: 28px; margin-top: 30px;}
+.div4 p{width: 80px; float: left; border-right: 1px solid #bec2cd; height: 28px; line-height: 28px; text-align:center; font-size: 14px; }
+#in_yanzheng{width: 168px; height: 28px; line-height: 28px; border: none; outline: none; float: left;}
+
+.div5{margin-top: 15px;margin-left: 35px;width: 331px; height: 28px; margin-top: 30px;}
+.zhuce{margin-top: 15px;margin-left: 35px;width: 331px; height: 28px; margin-top: 30px; text-align: center; background: #eb1e23; line-height: 28px; color: #fff; cursor: pointer;}
+
+
+
+/*三层搜索横向兰*/
+
+.seek_seek{height: 67px; width: 100%;position:absolute;}
+ .seek{height:67px; width:1200px; margin:0 auto;}
+ .seek .h3-1{height:38px; width:111px; background: #e22118; line-height: 38px; text-align: center; color: #fff; float: left;margin-top:30px;}
+.seek .h3-2{height:38px; line-height: 38px;width: 111px; text-align: center; color: #000; float: left; margin-top: 30px;}
+
+.seekright{width:690px; height:38px; margin-top: 30px; float: right; border:1px solid #d2d2d2;}
+.seekright .dom{width:600px; height: 36px; float: left; outline: none;border: none;display:inline-block;padding-left: 20px;}
+.seekright .prompt{width: 224px; height: 36px;position:absolute;text-align:center;line-height:36px;margin-left: 400px;}
+.seekright .prompt a{width:63px; height: 18px;display: inline-block; line-height: 18px; font-size: 14px; background: #eee; color: #707070;margin-left: 5px;}
+.seekright .prompt a:hover{color: #fff; background: #e3221b;}
+.seekright div{display:inline-block;float: right;width:61px; height: 38px; overflow: hidden;}
+
+/*4F*********************四层新人礼包导航栏*********************/
+.nav_nav{height: 56px; width: 100%;}
+.nav{height: 56px; width: 1200px; margin: 68px auto; }
+.nav li{float: left; font-size: 18px; line-height: 56px; padding-left: 50px;}
+.nav li a{color: #000; font-weight:900;}
+.nav li a:hover{color: #e22118;}
+
+/**************                      细节部分       *********************/
+.out{}
+.line{width: 1200px; margin: 0 auto; overflow: hidden;}
+.line .p1{height: 32px; width: 1200px; background: #eee; font-size: 16px; line-height: 32px;}
+.line .p1 a{color: #4e4e4e;}
+.line .p1 a:hover{color: red;}
+
+.footer{}
+.footer .left{width: 600px; float: left;}
+.footer .left .click{height: 90px; width: 600px; border: 1px solid #eee;}
+.footer .left .click img{display: inline;padding: 0 13px; border: 1px solid #c5c5c5; cursor: pointer; opacity: 0.5;}
+
+
+.footer .right{width: 590px; float: right;}
+.footer .right h4{font-size: 24px; margin-top: 26px;}
+.footer .right .red1{color: red; font-size: 16px; margin-top: 15px;}
+.footer .right .red2{color: #b52b25; font-size: 16px;; margin-top: 30px;}
+.eee{width:580px; background: #eee; margin-top: 15px; padding-left: 10px;}
+.eee .price{font-size:14px;}
+.eee .price span{font-size: 24px; color: red;}
+.solo{height: 70px; margin-top: 30px;}
+.solo .e1{font-size: 14px; float: left;}
+.solo .e2{font-size: 14px; float: left; margin-left: 10px; background: red; color:#fff;}
+.solo .e3{margin-right: 80px; float: right; }
+.solo .e3 a{border: 1px solid red; color: #999;font-size: 14px; padding: 5px; background: #fff;}
+.solo .e3 a:hover{color: red;}
+
+
+.footer .right .xia{height: 26px; background: #e8e8e8; font-size: 14px; line-height: 26px; text-align: right;}
+.footer .right .xia a{color: #999;}
+.footer .right .xia a:hover{color: red;}
+
+.fenqi{font-size: 18px; color: #000; margin-top: 100px;}
+.fenqi .span1{display: inline; margin-left: 100px; color:#999; font-size: 14px;}
+.fenqi .span2{display: inline; font-size: 14px;}
+.fenqi .span2 a{color:#84ccf4;}
+
+.shop{ width: 580px; height: 50px; margin-top: 120px;}
+.shop .num{width: 68px; height: 48px; border: 1px solid #e7e7e7; float: left;}
+.shop .num input{height: 48px; width: 68px; outline: none; font-size: 24px;}
+.shop .buy{width: 140px; height: 48px; border: 1px solid red; float: left; margin-left: 44px; text-align: center;}
+.shop .buy a{font-size: 24px; color: red; text-align: center; line-height: 48px;}
+.shop .car{width: 140px; height: 50px; background: red; float: right; margin-right: 140px; text-align: center; }
+.shop .car a{font-size: 24px; color: #fff; line-height: 50px;}
+
+/***************  选件搭售***********************/
+.center{ width: 100%;}
+.cen{height: 272px; width: 1200px;margin: 0 auto;}
+.cen .top{height: 36px; background: #eee;}
+.cen .top p{width: 104px; height: 34px; border-top: 2px solid red; font-size: 18px; color: red; background: #fff; text-align: center; line-height: 34px;}
+.change{ height: 236px; width: 1200px; margin: 0 auto;}
+.change .left{float: left;}
+
+.play{width: 754px; height: 236px; float: left; position: relative; left:10px; overflow: hidden;}
+.play ul{ height: 236px; position: absolute; top: 0; left: 0; z-index: 1;}
+.play ul li{float: left; width: 250px; margin-top:50px;}
+.play ul li img{display:inline; float: left;}
+.play ul li span{display:inline;font-size: 50px; color:red; margin-right: 52px; margin-top: 48px; float: right;}
+.dw1,.dw2{width: 20px; height: 30px; background: #c5c5c5; font-size: 14px; text-align: center; line-height: 30px; cursor: pointer;}
+.dw1{position: relative; top:114px; left: 0;z-index: 5;}
+.dw2{position: relative; top: 84px; left: 732px; z-index: 5;}
+
+
+.change .right{width:172px; float:right; height: 198px; padding: 48px 0 0 38px;}
+.change .right .new1{font-size: 14px;}
+.change .right .new2{font-size: 14px; color: red; margin-top: 22px;}
+.change .right .new3{font-size: 14px; color: red; margin-top: 12px;}
+.change .right .new4{width: 124px; height: 32px; background: #acacac; text-align: center; margin-top: 22px;}
+.change .right .new4 a{color: #fff; font-size:18px; line-height: 32px;}
+
+
+
+
+/*******box*****/
+.b-box{}
+.box{width: 1200px; margin: 0 auto; overflow: hidden;}
+.left{width: 208px; border: 1px solid #eee; float: left;}
+.left h6{height: 40px; background:#eee; font-size: 18px; text-align: center; line-height: 40px;}
+.left ul{width: 208px; height: 556x;}
+.left ul li{height: 85px; border-bottom: 1px dashed #9c9c9c; padding-top: 15px;}
+.left ul li img{display: block; float: left; float: left; }
+.left ul li p{width: 120px; font-size: 14px; line-height: 22px; float: right; color:#9c9c9c;}
+.left ul li p span{display: block; color: red;}
+
+.right{width: 978px; border: 1px solid #eee; float: right;}
+.right ul{width: 978px; height: 40px;background: #eee;}
+.right ul li{ float: left; width:154px; height: 38px; text-align: center;}
+.right ul li a{color: #000; font-size: 18px; line-height: 38px; }
+
+
+
+
+
+
+
+
+
+
+/**********底部*********/
+.bottom1{height: 230px; }
+.bottom{width: 1200px; margin: 0 auto; margin-top: 50px;}
+.bottom p{height: 83px;}
+
+.char ul{margin-left: 160px; float: left;}
+.char .u-1{margin-left: 0px;}
+.char li a{color: #999;}
+
+/***************************结束************/
+.over1{height: 90px;}
+.over{height: 90px; width: 1200px; margin: 0 auto;}
+.over p{text-align: center;}
+.over p a{color: #6e6e6e; font-size: 14px; padding:0 15px;}

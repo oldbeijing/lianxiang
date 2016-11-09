@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/demo2.css" />
+        <link rel="stylesheet" href="../css/font-awesome.css" type = "text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script type = "text/javascript" src = "../js/jquery-1.10.1.min.js"></script>
+        <script src="../js/cookies.js"></script>
+        <script type = "text/javascript" src = "../js/demo2.js"></script>
+          <script type = "text/javascript">
+            $(function(){
+                //顶部社交
+                   
+               $("#sj").bind({
+                        mouseover:function(){
+                        //$(".shejiao").animate({height: 270},600);
+                        $(".shejiao").css("display","block").css("z-index", "100").slideDown(1000);
+                 },mouseout: function(){
+                        $(".shejiao").css("display","none");
+                    }
+                });
+
+              $("#left_last").hover(function(){
+                    $(".cellphone").css("display", "block").css("z-index","100").slideDown(1000);
+                },function(){
+                    $(".cellphone").css("display", "none")
+                })  
+            })
+        </script>
+    </head>
+    <body>
+        <!--一层顶部横向导航栏-->
+        <style>
+                .shejiao {position: absolute; left:446px;line-height: 37px;padding: 0 10px;z-index:2;display:none; background: #fff;}
+                .shejiao li a{color: #000;text-decoration: none;}
+                .shejiao li a img{display: inline; float: left;}
+                .shejiao li a span{display: inline; float: right;}
+                .shejiao li a:hover{color: #ec831a;}
+            </style>
+        <div class = "top_top">
+            <div class = "top">
+                <ul class = "top_left">
+                    <li><a href = "">个人及家用产品库</a></li>
+                    <li><a href = "">商用产品库</a></li>
+                    <li><a href = "">企业级产品库</a></li>
+                    <li><a href = "">聚享汇会员专享</a></li>
+                    <li id = "sj"><a href = "" id = "sheJiao">社交平台</a>
+                        <ul class = "shejiao" style = "width:150px; height:270px;border:1px solid #707070;">
+                            <li><a href=""><img src="../images/index/ico_sina.png" alt=""><span>联想法官方微博</span></a></li>
+                            <li><a href=""><img src="../images/index/icon03.jpg" alt=""><span>杨元庆微博</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_wc.png" alt=""><span>联想法官方微信</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_zfb.png" alt=""><span> 百度贴吧联想吧</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_zfb.png" alt=""><span>联想兴趣部落</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_qq.png" alt=""><span> 联想QQ空间</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_wc.png" alt=""><span>  联想法官方社区</span></a></li>
+                        </ul>
+                    </li>
+                    <li id = "left_last"><a href = "" class = "left_last">手机版</a>
+                         <div class = "cellphone" style = "width: 252px; height: 138px; border: 1px solid #707070; position:absolute;left:524px; display: none; background: #fff;">
+                            <div class = "cellphone_left" style = "float: left; margin-top: 25px; margin-left: 23px;">
+                                <img src="../images/index/erweima.jpg" alt="">
+                            </div>
+                            <div class = "cellphone_right" style = "float: left; margin-top: 22px; margin-left: 15px;">
+                                <p style = "font-size:14px;">联想商城客户端<br /><span style = "color: #e2231a">手机下单立减20元</span></p>
+                                <p><img src="../images/index/0da8a977-593c-41eb-af5d-5fac4d3f7f52.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class = "top_right">
+                    <li><a href = "">登录</a></li>
+                    <li><a href = "">注册</a></li>
+                    <li><a href = "" class = "right_last">购物车</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    <!--      登录 及登录样式     -->
+    <div class = "enter">
+        <div class = "bg_black">
+            <a href = "" class = "common">普通登录</a>
+            <a href = "" class = "shortcut">快捷登录</a>
+        </div>
+        <!-- 关闭按钮-->
+        <a href="" class = "enter_close">×</a>
+
+        <div class = "username">
+            <p class = "username_name"><img src="../images/index/icon03.jpg" alt=""></p>
+            <input type="text" class = "name_p" placeholder = "   请输入手机号或邮箱" style = "border: none; outline: 0; width: 294px; height: 34px;">
+        </div>
+        <div class = "hint1"></div>
+        <div class = "password">
+            <p class = "password_word"><img src="../images/index/icon04.jpg" alt=""></p>
+            <input type="password"  class = "inp1" placeholder = "   密码" style = "border: none; outline: 0; width: 294px; height: 34px;">
+            <!--
+            <input type="text"  class = "inp2" placeholder = "   动态密码" style = "border: none; outline: 0; width: 200px; height: 34px; float: left; display: block;">
+            <a href="" class = "mima" style = "color: #000; width: 93px; height: 34px; float: right; background: #999; font-size: 12px; text-align: center; line-height: 34px; display: block">获取动态密码</a>
+            -->
+        </div>
+        <div class = "hint2"></div>
+        <div class = "auto">
+        <input type="checkbox" class = "check" >
+       <span class = "auto_span">自动登录</span>
+       <p class = "enter_p">登   录</p>
+       <p class = "more_p">
+            <a href="" style = "display:inline-block; float:left; color: #005be7">立即注册</a>
+            <a href="" style = "display: inline-block; float: right; color: #005be7">忘记密码</a>
+        </p>
+        <p style = "width: 330px; margin: 20px 0 0 48px; font-size: 12px">使用合作网站登录</p>
+        <p style = "width: 330px; margin: 5px 0 0 48px;">
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_qq.png" alt=""></a>
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_sina.png" alt=""></a>
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_wc.png" alt=""></a>
+            <a href="" style = "display: inline-block; padding-right: 15px;"><img src="../images/index/ico_zfb.png" alt=""></a>
+        </p>
+        </div>
+    </div>
+
+    <!--             注册            -->
+        <div class = "login">
+            <p class = "tit">欢迎注册联想会员</p>
+            <a href="" class = "close2">×</a>
+            <div  class  = "div1">
+                <p>账号</p>
+                <input type="text" placeholder = "请输入手机号或邮箱" id = "in_zhanghao">
+                <span class = "p_zhanghao" style = "color: red"></span><br>
+            </div>
+            
+            <div class = "div2">
+                <p>密码</p>
+                <input type="password" placeholder = "密码长度8-20位数字,字母," id = "in_mima1">
+                <span class = "p_mima1" style = "color: red"></span><br />
+            </div>
+
+            <div class = "div3">
+                <p>确认密码</p>
+                <input type="password" id = "in_mima2">
+                <span class = "p_mima2" style = "color: red"></span><br />
+            </div>
+            
+
+            <div class = "div4">
+                <p>验证码</p>
+                <input type="text" id = "in_yanzheng">
+                <p class = "p_yanzheng" style = "background: #999; float: left; font-size:20px; text-align: center; line-height:28px; width:81px; height: 28px; cursor: pointer;">fghfgh</p>  
+                <div class = "p_yanzhengs" style = "color: red"></div>
+            </div>
+
+            <div class = "div5">
+                <input type="checkbox">
+                <span>同意联想的使用条款和隐私权政策</span>
+            </div>
+            <p class = "zhuce">立即注册</p>
+        </div>
+
+        <!--三层可搜索横向栏-->
+
+        <div class = "seek_seek">
+            <div class = "seek">
+                <h3 class = "h3-1"> Lenovo </h3>
+                <h3 class = "h3-2"> 联想商城 </h3>
+
+                <div class = "seekright">
+                    <p class = "prompt">
+                        <a href="">拯救者</a>
+                        <a href="">New S2</a>
+                        <a href="">小新</a>
+                    </p>
+                    <input type="text" placeholder = "miix5"  class = "dom"/>
+                    <div>
+                        <a href="" class = "btn1"><img src="../images/index/sousuo1.jpg" alt="" style = "height: 100%;"></a>
+                        <a href="" class = "btn2" ><img src="../images/index/sousuo2.jpg" alt="" style = "height: 100%;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4F*********************四层新人礼包导航栏********************-->
+        <script>
+                $(function(){
+                        $("#baokuan").hover(function(){
+                            $("#baokuan1").css("display", "block");
+                        },function(){
+                             $("#baokuan1").css("display", "none");
+                        })
+
+                        $("#serve").hover(function(){
+                            $("#serves").css("display", "block");
+                        },function(){
+                             $("#serves").css("display", "none");
+                        })
+                })
+        </script>
+        <style>
+            #baokuan{position: relative;}
+            #baokuan1{position: absolute; width: 150px; height: 270px; background: #fff; z-index: 5; display: none; left:0px;}
+            #baokuan1 li,#serves li{height: 30px; font-size: 14px; line-height: 30px; width: 150px;}
+            #baokuan1 li a,#serves li a{display: inline;color: #999;}
+            #baokuan1 li a:hover,#serves li a:hover{color: red;}
+            #serve{position: relative;}
+            #serves{position: absolute; width: 150px; height: 90px; background: #fff; z-index: 5; left: 0px; display: ;}
+
+        </style>
+        <div class = "nav_nav">
+            <ul class = "nav">
+                <li>
+                <a href="">全部分类</a>
+                </li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="">小新 Air 13 pro</a></li>
+                <li id = "baokuan"><a href="html/demo1.html">爆款</a>
+                    <ul id = "baokuan1">
+                        <li><a href="">小新Air 12</a></li>
+                        <li><a href="">小新Air 13</a></li>
+                        <li><a href="">小新310</a></li>
+                        <li><a href="">拯救者游戏本</a></li>
+                        <li><a href="">ThinkPad S32</a></li>
+                        <li><a href="">看家宝</a></li>
+                        <li><a href="">小新700</a></li>
+                        <li><a href="">MIIX5</a></li>
+                        <li><a href="">YOGO BOAK</a></li>
+                    </ul>
+                </li>
+                <li><a href="">联想合伙人</a></li>
+                <li><a href="">0元试用</a></li>
+                <li><a href="">以旧换新</a></li>
+                <li><a href="">私人订制</a></li>
+                <li id = "serve"><a href="html/demo1.html">服务</a>
+                    <ul id = "serves">
+                        <li><a href="">服务支持</a></li>
+                        <li><a href="">驱动下载</a></li>
+                        <li><a href="">联想知识库</a></li>
+                    </ul>
+                </li>
+                <li><a href="">社区</a></li>
+            </ul>
+        </div>
+
+        <!--                   细节部分         -->
+        <div class = "out">
+            <div class = "line">
+                <p class = "p1">
+                    <a href="../index.html">首页 ></a>
+                    <a href="">商品详情 ></a>
+                    <span>小新windows 10 家庭版，轻薄又好用</span>
+                </p>
+
+                <div class = "footer">
+                    <div class = "left">
+                        <img src="../images/demo2/q1.jpg" alt="" id = "i1">
+                        <img src="../images/demo2/q2.jpg" alt="" style = "display: none;" id = "i2">
+                        <img src="../images/demo2/q3.jpg" alt="" style = "display: none;" id = 'i3'>
+                        <img src="../images/demo2/q4.jpg" alt="" style = "display: none; width: 544px; height: 544px; " id = "i4">
+                        <img src="../images/demo2/q5.jpg" alt="" style = "display: none; width: 544px; height: 544px;" id = "i5">
+                        <div class = "click">
+                            <img src="../images/demo2/c1.jpg" alt="" id = "m1">
+                            <img src="../images/demo2/c2.jpg" alt="" id = "m2">
+                            <img src="../images/demo2/c3.jpg" alt="" id ="m3">
+                            <img src="../images/demo2/c4.jpg" alt="" id = "m4">
+                            <img src="../images/demo2/c5.jpg" alt="" id = "m5">
+                        </div>
+                    </div>
+                    <div class = "right">
+                        <h4 id = "name">小新Air 13 Pro-金(i5/windows 10 家庭版/13.3存)</h4>
+                        <p class = "red1">【8G内存！】<span id = "size">14.8mm+1.29kg 轻薄本！</span>配940MX 2G独显！正版office</p>
+                        <p class = "red2">【特别提示】小新系列产品为联想爆款机型，为确保更多客户收益，此款产品同一客户限购一台，给您带来的不便敬请谅解。</p>
+                        <div class = "eee">
+                            <p class = "price">商城价：<span id = "price">6499</span></p>
+                            <div class = "solo">
+                                <p class = "e1">促销信息:</p>
+                                <p class = "e2">赠  品</p>
+                                <p class = "e3">
+                                    <a href="">联想官方商场专属鼠标垫</a>
+                                    <a href="">联想笔记本延长1年保修</a>
+                                    <br><br>
+                                    <a href="">小新Air 13 Pro</a>
+                                </p>
+
+                            </div>
+                        </div>
+                        <p class = "xia"><a href="">手机端专享价6389元</a></p>
+                        <input type="hidden" id="goodsId" value="20160825">
+                        <p class = fenqi>分期付款：<span class = "span1">此商品支持分期支付</span><span class = "span2"><a href = "">，了解分期支付</a></span></p>
+
+                        <div class = "shop">
+                            <p class = "num"><input type="number" min = "1" max = "6" value = "1" id = "number"/></p>
+                            <p class = "buy"><a href="">立即购买</a></p>
+                            <p class = "car"><a href="demo3.html" id = "btn">加入购物车</a></p>
+                        </div>
+
+                    </div>
+                     <script>
+                       function abs(id){
+                                return document.getElementById(id);
+                            }
+                            abs('btn').onclick = function(){
+
+                                var val = 'id#'+abs('goodsId').value+'|name#'+abs('name').innerHTML+'|imgUrl#'+abs('m1').src+'|size#'+abs('size').innerHTML+'|price#'+abs('price').innerHTML+'|number#'+abs('number').value+'|url#'+window.location.href;
+
+                                cookie('goods'+abs('goodsId').value,val,1);
+                        }
+                 </script>
+                </div>
+
+            </div>
+        </div>
+        
+
+        <!--         选件搭售                       -->
+        <div class = "center">
+            <div class = "cen">
+                <div class = "top">
+                    <p>选件搭售</p>
+                </div>
+
+                <div class = "change">
+                    <div class = "left">
+                        <img src="../images/demo2/xx.jpg" alt="" style = "margin-left: 20px;">
+                        <p style = "font-size: 14px; text-align: center; color:#999;">小新Air 13 Pro-金</p>
+                        <p style = "font-size: 14px; color: red; font-size: 14px; text-align: center; ">￥6499</p>
+                    </div>
+
+                    <div class = "play">
+                        <ul>
+                            <li><a href=""><img src="../images/demo2/jia1.jpg" alt=""></a><span>+</span></li>
+                            <li><a href=""><img src="../images/demo2/jia2.jpg" alt=""></a><span>+</span></li>
+                            <li><a href=""><img src="../images/demo2/jia3.jpg" alt=""></a><span>+</span></li>
+                            <li><a href=""><img src="../images/demo2/jia4.jpg" alt=""></a><span>+</span></li>
+                            <li><a href=""><img src="../images/demo2/jia5.jpg" alt=""></a><span>+</span></li>
+                            <li><a href=""><img src="../images/demo2/jia1.jpg" alt=""></a><span>+</span></li>
+                            <li><a href=""><img src="../images/demo2/jia1.jpg" alt=""></a><span>+</span></li>
+                        </ul>
+                        <p class = "dw1"> < </p>
+                        <p class = "dw2"> > </p>
+                    </div>
+
+                    <div class = "right">
+                        <p class = "new1">以搭配：<span>0件</span></p>
+                        <p class = "new2">搭售价：<span>￥6499.00</span></p>
+                        <p class = "new3">优惠了：<span>￥0.00</span></p>
+                        <p class = "new4"><a href="demo3.html">加入购物车</a></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <script>
+                $(function(){
+                    $.ajax({
+                        url: '../js/demo2.json',
+                        type: 'GET',
+                        success: function(res){
+                            var html = '';
+                            for(var i = 0; i<res[0].child.length; i++){
+                                html += '<li><a href = ""><img src="'+res[0].child[i].img+'" alt=""><p>'+res[0].child[i].title1+'<span>'+res[0].child[i].price+'</span></p></a></li>'
+                            }
+                            $(".cell ul").html(html);
+                        }
+                    })
+                })
+        </script>
+        <div class = "b-box">
+            <div class = "box">
+                <div class = "left">
+                    <div class = "cell">
+                        <h6>热销榜</h6>
+                        <ul>
+                        </ul>
+                    </div>
+                    
+                    <script>
+                $(function(){
+                    $.ajax({
+                        url: '../js/demo2.json',
+                        type: 'GET',
+                        success: function(res){
+                            var html = '';
+                            for(var i = 0; i<res[1].child.length; i++){
+                                html += '<li><a href = ""><img src="'+res[1].child[i].img+'" alt=""><p>'+res[1].child[i].title1+'<span>'+res[1].child[i].price+'</span></p></a></li>'
+                            }
+                            $(".love ul").html(html);
+                        }
+                    })
+                })
+        </script>
+                    <div class = "love">
+                        <h6>猜你喜欢</h6>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                    
+                    <script>
+                $(function(){
+                    $.ajax({
+                        url: '../js/demo2.json',
+                        type: 'GET',
+                        success: function(res){
+                            var html = '';
+                            for(var i = 0; i<res[2].child.length; i++){
+                                html += '<li><a href = ""><img src="'+res[2].child[i].img+'" alt=""><p>'+res[2].child[i].title1+'<span>'+res[2].child[i].price+'</span></p></a></li>'
+                            }
+                            $(".kan ul").html(html);
+                        }
+                    })
+                })
+        </script>
+                    <div class = "kan">
+                        <h6>看了又看</h6>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class = "right">
+                    <ul>
+                        <li style = "background: #fff; border-top: 2px solid red;"><a href="" style = "color: red;">商品详情</a></li>
+                        <li><a href="">配置信息</a></li>
+                        <li><a href="">商品评价</a></li>
+                    </ul>
+                    <div class = "bb1">
+                        <img src="../images/demo2/big1.jpg" alt="">
+                        <img src="../images/demo2/big2.jpg" alt="">
+                        <img src="../images/demo2/big3.jpg" alt="">
+                        <img src="../images/demo2/big4.jpg" alt="">
+                        <img src="../images/demo2/big5.jpg" alt="">
+                        <img src="../images/demo2/big6.jpg" alt="">
+                        <img src="../images/demo2/big7.jpg" alt="">
+                        <img src="../images/demo2/big8.jpg" alt="">
+                        <img src="../images/demo2/big9.jpg" alt="">
+                    </div>
+                    <div class = "bb2" style = "display: none">
+                        <img src="../images/demo2/big10.jpg" alt="">
+                    </div>
+                    <div class = "bb3" style = "display: none;"></div>
+
+                </div>
+            </div>
+        </div>
+
+         <!--      底部      -->        
+        <div class = "bottom1">
+            <div class = "bottom">
+                <p><img src="../images/index/b1.jpg" alt=""></p>
+                <div class = "char">
+                    <ul class = "u-1">
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                        <li><a href="">购物指南</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+      <!--    结束        -->
+        <div class = "over1">
+            <div class = "over">
+            <p>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+ 
+                <br/>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">版权所有</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+                <a href="">关于联想</a>
+            </p>
+            </div>
+        </div>
+
+    </body>
+</html>
