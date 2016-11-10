@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2016-11-08 19:43:36
 * @Last Modified by:   anchen
-* @Last Modified time: 2016-11-08 23:08:11
+* @Last Modified time: 2016-11-10 10:22:38
 */
 *{margin: 0; padding: 0;}
 li{list-style: none;}
@@ -12,7 +12,7 @@ img{ border: 0; display:block}
 .top{height:595px; width: 100%; position: relative; background: url(../images/demo4/bg01.jpg) no-repeat center;}
 .join{width:163px; height: 40px;position: absolute; top: 469px; left:558px;  cursor: pointer;}
 
-.huang{height: 70px; background: #ffe62b; position: relative;}
+.huang{height: 70px; background: #ffe62b; position: relative; z-index: 100;}
 .yellow{width: 1200px; margin: 0 auto;}
 .yellow p{font-size: 22px; float: left; line-height: 70px; width: 240px; text-align:center;}
 .yellow p a{color: #c64351;}
@@ -65,3 +65,161 @@ img{ border: 0; display:block}
 .buy .shnag span{font-size: 34px; font-weight: 900;}
 .buy .xia{background: #ff4e3e; font-size: 20px; text-align: center; line-height: 53px;}
 .buy .xia a{color: #fff;}
+
+.lunbo{ height: 385px; width: 1170px; position: relative; left: 0; top: 0; overflow: hidden;}
+.lunbo ol{width: 200px;height: 50px; position: absolute; top: 321px; left: 483px; z-index: 2;}
+.lunbo ol li {width:10px; height: 10px; background: pink;float: left; margin: 20px 10px; cursor: pointer; border-radius: 50% 50%;}
+.lunbo ul{position: absolute; top: 0 left: 0; z-index: 1;}
+.lunbo ul li img{ display: inline; float: left; margin-left: 100px; }
+.lunbo ul li .you{float: right; margin-right: 100px; margin-top: 100px;}
+.lunbo ul li .you h1{color: #b9aff7;}
+.lunbo ul li .you p{font-size: 14px; color: #b9aff7; width: 380px; line-height: 20px;}
+
+.dw-left,.dw-right{ width: 60px; height: 100px; font-size: 30px; line-height: 100px; text-align:center; color: #b9aff7;}
+.dw-left{position: absolute; top: 125px; z-index: 3; cursor: pointer;}
+.dw-right{position: absolute; top: 125px; right: 0px; z-index: 3; cursor: pointer;}
+
+/**********************************/
+.zuk{height: 1005px; background: #f5bb11;}
+.zhuanqu{height: 105px; width: 869px; margin: 0 auto; padding-top: 81px;}
+
+.phone{width:1170px; height: 428px; margin: 0 auto; background: url(../images/demo4/phone1.jpg) no-repeat; cursor:pointer;}
+
+.fff{width:1170px; height: 310px; margin: -370px auto;}
+.f11{width: 580px; height: 310px; background: #fff; float:left;}
+.f11 img{width: 305px; height: 310px; display: inline; float: left;}
+.f11 .you{width: 275px; height: 310px; float: right;}
+.f11 .you  h1{color: #000; margin-top: 57px;}
+.f11 .you .p1{font-size: 16px; margin-top: 10px; color:#999;}
+.f11 .you .p1 span{display: block; color: #ff4e3e; margin-top: 23px;}
+.f11 .you .p2{font-size: 32px; color: #ff4e3e; margin-top: 20px;}
+.f11 .you .p3{width: 150px; height: 44px; background: #ff4e3e;text-align: center; line-height: 44px; margin-top: 15px; }
+.f11 .you .p3 a{color: #fff; }
+.f11 .you .p3:hover{background: #f92d1a;}
+.f22{width: 580px; height: 310px; background: #fff; float:right;}
+.f22 img{width: 305px; height: 310px; display: inline; float: left;}
+.f22 .you{width: 275px; height: 310px; float: right;}
+.f22 .you  h1{color: #000; margin-top: 57px;}
+.f22 .you .p1{font-size: 16px; margin-top: 10px; color:#999;}
+.f22 .you .p1 span{display: block; color: #ff4e3e; margin-top: 23px;}
+.f22 .you .p2{font-size: 32px; color: #ff4e3e; margin-top: 20px;}
+.f22 .you .p3{width: 150px; height: 44px; background: #ff4e3e;text-align: center; line-height: 44px; margin-top: 15px; }
+.f22 .you .p3 a{color: #fff; }
+.f22 .you .p3:hover{background: #f92d1a;}
+
+
+/*******************************/
+.moto{height: 3495px; background: #533bfd; margin-top: 430px;}
+.mt{height: 105px; width: 869px; margin: 0 auto; padding-top: 81px;}
+.pic{width: 1200px; height: 220px; margin: 0 auto;}
+.bg02{width: 1200px; height: 432px; background: url(../images/demo4/bg02.jpg) no-repeat; margin: 15px auto; cursor: pointer;}
+.bg03{width: 1200px; height: 840px; background: url(../images/demo4/bg03.jpg) no-repeat; margin: 20px auto; cursor: pointer;}
+.bg04{width: 1200px; height: 840px; background: url(../images/demo4/bg04.jpg) no-repeat; margin: 20px auto; cursor: pointer;}
+.bg05{width: 1200px; height: 840px; background: url(../images/demo4/bg05.jpg) no-repeat; margin: 20px auto; cursor: pointer;}
+
+
+/*****************************/
+.dianchi{height: 2214px; background: #f5bb11;}
+.dian0{width: 1200px; height:90px; margin: 0 auto;}
+.dian1{width: 1200px; height: 428px; background: url(../images/demo4/dian1.jpg) no-repeat; margin: 20px auto; cursor: pointer; margin-top: -20px; }
+.cell{width:1200px; height: 310px; margin: 20px auto;}
+.f1{width: 580px; height: 310px; background: #fff; float:left;}
+.f1 img{width: 305px; height: 310px; display: inline; float: left;}
+.f1 .you{width: 275px; height: 310px; float: right;}
+.f1 .you  h1{color: #000; margin-top: 57px;}
+.f1 .you .p1{font-size: 16px; margin-top: 10px; color:#999;}
+.f1 .you .p1 span{display: block; color: #ff4e3e; margin-top: 23px;}
+.f1 .you .p2{font-size: 32px; color: #ff4e3e; margin-top: 20px;}
+.f1 .you .p3{width: 150px; height: 44px; background: #ff4e3e;text-align: center; line-height: 44px; margin-top: 15px; }
+.f1 .you .p3 a{color: #fff; }
+.f1 .you .p3:hover{background: #f92d1a;}
+.f2{width: 580px; height: 310px; background: #fff; float:right;}
+.f2 img{width: 305px; height: 310px; display: inline; float: left;}
+.f2 .you{width: 275px; height: 310px; float: right;}
+.f2 .you  h1{color: #000; margin-top: 57px;}
+.f2 .you .p1{font-size: 16px; margin-top: 10px; color:#999;}
+.f2 .you .p1 span{display: block; color: #ff4e3e; margin-top: 23px;}
+.f2 .you .p2{font-size: 32px; color: #ff4e3e; margin-top: 20px;}
+.f2 .you .p3{width: 150px; height: 44px; background: #ff4e3e;text-align: center; line-height: 44px; margin-top: 15px; }
+.f2 .you .p3 a{color: #fff; }
+.f2 .you .p3:hover{background: #f92d1a;}
+.bg06{width: 1200px; height: 429px; background: url(../images/demo4/bg06.jpg) no-repeat; margin: 20px auto; cursor: pointer;}
+
+.bg07{height: 522px; margin: 20px auto; width: 1200px;}
+.cs1,.cs2,.cs3{ float: left; width: 286px; height: 522px; background:#fffabe; margin-right: 18px; text-align: center}
+.cs4{width: 286px; height: 522px; background: #fffabe; float: right; text-align: center;}
+.cs1 h1{color: #89703e;}
+.cs1 .p1{color: #89703e; font-size: 16px; margin-top: 10px;}
+.cs1 .p2{font-size: 26px; color: #ff4e3e; margin-top: 28px;}
+.cs1 .p3{ width: 150px; height: 44px; background: #ff4e3e; margin-top: 10px; line-height: 44px; text-align:center; margin-left: 70px; }
+.cs1 .p3:hover{background: #fb2815;}
+.cs1 .p3 a{color: #fff;}
+
+.cs2 h1{color: #89703e;}
+.cs2 .p1{color: #89703e; font-size: 16px; margin-top: 10px;}
+.cs2 .p2{font-size: 26px; color: #ff4e3e; margin-top: 28px;}
+.cs2 .p3{ width: 150px; height: 44px; background: #ff4e3e; margin-top: 10px; line-height: 44px; text-align:center; margin-left: 70px; }
+.cs2 .p3:hover{background: #fb2815;}
+.cs2 .p3 a{color: #fff;}
+
+.cs3 h1{color: #89703e;}
+.cs3 .p1{color: #89703e; font-size: 16px; margin-top: 10px;}
+.cs3 .p2{font-size: 26px; color: #ff4e3e; margin-top: 28px;}
+.cs3 .p3{ width: 150px; height: 44px; background: #ff4e3e; margin-top: 10px; line-height: 44px; text-align:center; margin-left: 70px; }
+.cs3 .p3:hover{background: #fb2815;}
+.cs3 .p3 a{color: #fff;}
+
+.cs4 h1{color: #89703e;}
+.cs4 .p1{color: #89703e; font-size: 16px; margin-top: 10px;}
+.cs4 .p2{font-size: 26px; color: #ff4e3e; margin-top: 28px;}
+.cs4 .p3{ width: 150px; height: 44px; background: #ff4e3e; margin-top: 10px; line-height: 44px; text-align:center; margin-left: 70px; }
+.cs4 .p3:hover{background: #fb2815;}
+.cs4 .p3 a{color: #fff;}
+
+.watch{width:1200px; height: 310px; margin: 20px auto;}
+.f1a{width: 590px; height: 310px; background: #fff; float:left;}
+.f1a img{width: 305px; height: 310px; display: inline; float: left;}
+.f1a .you{width: 275px; height: 310px; float: right;}
+.f1a .you  h1{color: #000; margin-top: 57px;}
+.f1a .you .p1{font-size: 16px; margin-top: 10px; color:#999;}
+.f1a .you .p1 span{display: block; color: #ff4e3e; margin-top: 23px;}
+.f1a .you .p2{font-size: 32px; color: #ff4e3e; margin-top: 20px;}
+.f1a .you .p3{width: 150px; height: 44px; background: #ff4e3e;text-align: center; line-height: 44px; margin-top: 15px; }
+.f1a .you .p3 a{color: #fff; }
+.f1a .you .p3:hover{background: #f92d1a;}
+.f2a{width: 590px; height: 310px; background: #fff; float:right;}
+.f2a img{width: 305px; height: 310px; display: inline; float: left;}
+.f2a .you{width: 275px; height: 310px; float: right;}
+.f2a .you  h1{color: #000; margin-top: 57px;}
+.f2a .you .p1{font-size: 16px; margin-top: 10px; color:#999;}
+.f2a .you .p1 span{display: block; color: #ff4e3e; margin-top: 23px;}
+.f2a .you .p2{font-size: 32px; color: #ff4e3e; margin-top: 20px;}
+.f2a .you .p3{width: 150px; height: 44px; background: #ff4e3e;text-align: center; line-height: 44px; margin-top: 15px; }
+.f2a.you .p3 a{color: #fff; }
+.f2a .you .p3:hover{background: #f92d1a;}
+
+
+/**************************************/
+.peijian{height: 2570px; background: #533bfd;}
+.kong{width: 1200px; height: 80px;}
+.parts{width: 869px; height: 105px; margin: 0 auto;}
+.uu{width: 1200px; margin: 0 auto;}
+.uu li{float: left; width: 286px; height: 440px; background: #fff; margin-left: 14px;  margin-top: 20px;text-align: center;}
+.uu li img{display: block; margin-top:30px; margin-left: 42px;}
+.uu li .p1{font-size: 20px; margin-top: 44px;}
+.uu li .p2{font-size: 30px; color:#ff4e3e; margin-top: 16px;}
+.uu li .p2 span{font-size: 25px; color: #999;text-decoration: line-through; display: inline;}
+.uu li .p3{width:150px; height: 44px; background: #ff4e3e; line-height: 44px; text-align: center; margin-left:65px; margin-top: 10px;}
+.uu li .p3:hover{background: #f92d1a;}
+.uu li .p3 a{color: #fff; font-size: 23px;}
+
+/************************/
+.buttom{margin: 0 auto; width: 1200px; height: 240px;}
+.buttom ul{float: left;  width: 230px; margin-top: 50px;}
+.buttom ul li{margin-top: 15px;}
+.buttom ul li a{color: #999;}
+.kefu{width: 200px; float: right; margin-top: 50px;}
+.kefu .p1{background: #00a0e9; width: 100px; height: 44px; line-height: 44px; text-align:center;}
+.kefu .p1 a{color: #fff; font-size:23px;}
+.kefu .p2{font-size: 30px; margin-top: 20px;}
+.kefu .p3{font-size: 16px; color: #999; margin-top: 10px;}

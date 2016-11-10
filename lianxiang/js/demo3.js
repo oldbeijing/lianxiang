@@ -272,7 +272,7 @@ function setCookie(name, value, expires, path, domain, isSecure){
 
 //【注】传入对应的健,获取cookie缓存中对应的值
 function getCookie(name){
-	var cookieText = decodeURIComponent(document.cookie);
+	var cookieText = document.cookie;
 	//1.首先找到键的位置
 	var start = cookieText.indexOf(name);
 	if(start == -1){

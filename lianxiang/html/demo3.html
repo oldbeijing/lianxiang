@@ -11,18 +11,18 @@
         <script type = "text/javascript">
             $(function(){
                 //顶部社交
-                
-               $("#sheJiao").bind({
+                   
+               $("#sj").bind({
                         mouseover:function(){
                         //$(".shejiao").animate({height: 270},600);
-                        $(".shejiao").css("display","block").css("z-index", "22");
+                        $(".shejiao").css("display","block").css("z-index", "100").slideDown(1000);
                  },mouseout: function(){
                         $(".shejiao").css("display","none");
                     }
                 });
 
-              $(".top .left_last").hover(function(){
-                    $(".cellphone").css("display", "block").css("z-index","22").slideDown(1000);
+              $("#left_last").hover(function(){
+                    $(".cellphone").css("display", "block").css("z-index","100").slideDown(1000);
                 },function(){
                     $(".cellphone").css("display", "none")
                 })  
@@ -31,6 +31,13 @@
     </head>
     <body>
         <!--一层顶部横向导航栏-->
+        <style>
+                .shejiao {position: absolute; left:446px;line-height: 37px;padding: 0 10px;z-index:2;display:none; background: #fff;}
+                .shejiao li a{color: #000;text-decoration: none;}
+                .shejiao li a img{display: inline; float: left;}
+                .shejiao li a span{display: inline; float: right;}
+                .shejiao li a:hover{color: #ec831a;}
+            </style>
         <div class = "top_top">
             <div class = "top">
                 <ul class = "top_left">
@@ -38,41 +45,36 @@
                     <li><a href = "">商用产品库</a></li>
                     <li><a href = "">企业级产品库</a></li>
                     <li><a href = "">聚享汇会员专享</a></li>
-                    <li><a href = "" id = "sheJiao">社交平台</a></li>
-                    <li><a href = "" class = "left_last">手机版</a></li>
+                    <li id = "sj"><a href = "" id = "sheJiao">社交平台</a>
+                        <ul class = "shejiao" style = "width:150px; height:270px;border:1px solid #707070;">
+                            <li><a href=""><img src="../images/index/ico_sina.png" alt=""><span>联想法官方微博</span></a></li>
+                            <li><a href=""><img src="../images/index/icon03.jpg" alt=""><span>杨元庆微博</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_wc.png" alt=""><span>联想法官方微信</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_zfb.png" alt=""><span> 百度贴吧联想吧</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_zfb.png" alt=""><span>联想兴趣部落</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_qq.png" alt=""><span> 联想QQ空间</span></a></li>
+                            <li><a href=""><img src="../images/index/ico_wc.png" alt=""><span>  联想法官方社区</span></a></li>
+                        </ul>
+                    </li>
+                    <li id = "left_last"><a href = "" class = "left_last">手机版</a>
+                         <div class = "cellphone" style = "width: 252px; height: 138px; border: 1px solid #707070; position:absolute;left:524px; display: none; background: #fff;">
+                            <div class = "cellphone_left" style = "float: left; margin-top: 25px; margin-left: 23px;">
+                                <img src="../images/index/erweima.jpg" alt="">
+                            </div>
+                            <div class = "cellphone_right" style = "float: left; margin-top: 22px; margin-left: 15px;">
+                                <p style = "font-size:14px;">联想商城客户端<br /><span style = "color: #e2231a">手机下单立减20元</span></p>
+                                <p><img src="../images/index/0da8a977-593c-41eb-af5d-5fac4d3f7f52.jpg" alt=""></p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
                 <ul class = "top_right">
                     <li><a href = "">登录</a></li>
                     <li><a href = "">注册</a></li>
-                    <li><a href = "" class = "right_last">购物车</a></li>
+                    <li><a href = "demo3.html" class = "right_last">购物车</a></li>
                 </ul>
             </div>
         </div>
-
-            <style>
-                .shejiao {position: absolute; left:446px;line-height: 37px;padding: 0 10px;z-index:2;display:none; background: #fff;}
-                .shejiao li a{color: #000;text-decoration: none;}
-                .shejiao li a:hover{color: #ec831a;}
-            </style>
-            <ul class = "shejiao" style = "width:150px; height:270px;border:1px solid #707070;">
-                <li><a href=""><img src="../images/index/ico_sina.png" alt="">  联想法官方微博</a></li>
-                <li><a href=""><img src="../images/index/icon03.jpg" alt="">  杨元庆微博</a></li>
-                <li><a href=""><img src="../images/index/ico_wc.png" alt="">  联想法官方微信</a></li>
-                <li><a href=""><img src="../images/index/ico_zfb.png" alt="">  百度贴吧联想吧</a></li>
-                <li><a href=""><img src="../images/index/ico_zfb.png" alt="">  联想兴趣部落</a></li>
-                <li><a href=""><img src="../images/index/ico_qq.png" alt="">  联想QQ空间</a></li>
-                <li><a href=""><img src="../images/index/ico_wc.png" alt="">  联想法官方社区</a></li>
-            </ul>
-            
-            <div class = "cellphone" style = "width: 252px; height: 138px; border: 1px solid #707070; position:absolute;left:524px; display: none; background: #fff;">
-                <div class = "cellphone_left" style = "float: left; margin-top: 25px; margin-left: 23px;">
-                    <img src="../images/index/erweima.jpg" alt="">
-                </div>
-                <div class = "cellphone_right" style = "float: left; margin-top: 22px; margin-left: 15px;">
-                    <p style = "font-size:14px;">联想商城客户端<br /><span style = "color: #e2231a">手机下单立减20元</span></p>
-                    <p><img src="../images/index/0da8a977-593c-41eb-af5d-5fac4d3f7f52.jpg" alt=""></p>
-                </div>
-            </div>
 
 
     <!--      登录 及登录样式     -->
@@ -158,7 +160,7 @@
         <div class = "seek_seek">
             <div class = "seek">
                 <h3 class = "h3-1"> Lenovo </h3>
-                <h3 class = "h3-2"> 购物车 </h3>
+                <h3 class = "h3-2"> 联想商城 </h3>
 
                 <div class = "seekright">
                     <p class = "prompt">
@@ -176,6 +178,31 @@
         </div>
 
         <!-- 4F*********************四层新人礼包导航栏********************-->
+        <script>
+                $(function(){
+                        $("#baokuan").hover(function(){
+                            $("#baokuan1").css("display", "block");
+                        },function(){
+                             $("#baokuan1").css("display", "none");
+                        })
+
+                        $("#serve").hover(function(){
+                            $("#serves").css("display", "block");
+                        },function(){
+                             $("#serves").css("display", "none");
+                        })
+                })
+        </script>
+        <style>
+            #baokuan{position: relative;}
+            #baokuan1{position: absolute; width: 150px; height: 270px; background: #fff; z-index: 5; display: none; left:0px;}
+            #baokuan1 li,#serves li{height: 30px; font-size: 14px; line-height: 30px; width: 150px;}
+            #baokuan1 li a,#serves li a{display: inline;color: #999;}
+            #baokuan1 li a:hover,#serves li a:hover{color: red;}
+            #serve{position: relative;}
+            #serves{position: absolute; width: 150px; height: 90px; background: #fff; z-index: 5; left: 0px; display: ;}
+
+        </style>
         <div class = "nav_nav">
             <ul class = "nav">
                 <li>
@@ -183,12 +210,30 @@
                 </li>
                 <li><a href="../index.html">首页</a></li>
                 <li><a href="">小新 Air 13 pro</a></li>
-                <li><a href="">爆款</a></li>
+                <li id = "baokuan"><a href="html/demo1.html">爆款</a>
+                    <ul id = "baokuan1">
+                        <li><a href="">小新Air 12</a></li>
+                        <li><a href="">小新Air 13</a></li>
+                        <li><a href="">小新310</a></li>
+                        <li><a href="">拯救者游戏本</a></li>
+                        <li><a href="">ThinkPad S32</a></li>
+                        <li><a href="">看家宝</a></li>
+                        <li><a href="">小新700</a></li>
+                        <li><a href="">MIIX5</a></li>
+                        <li><a href="">YOGO BOAK</a></li>
+                    </ul>
+                </li>
                 <li><a href="">联想合伙人</a></li>
                 <li><a href="">0元试用</a></li>
                 <li><a href="">以旧换新</a></li>
                 <li><a href="">私人订制</a></li>
-                <li><a href="">服务</a></li>
+                <li id = "serve"><a href="html/demo1.html">服务</a>
+                    <ul id = "serves">
+                        <li><a href="">服务支持</a></li>
+                        <li><a href="">驱动下载</a></li>
+                        <li><a href="">联想知识库</a></li>
+                    </ul>
+                </li>
                 <li><a href="">社区</a></li>
             </ul>
         </div>
